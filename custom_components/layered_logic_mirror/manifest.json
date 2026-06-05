@@ -1,0 +1,13 @@
+{
+  "domain": "layered_logic_mirror",
+  "name": "Layered Logic Mirror",
+  "codeowners": ["@bowbikes"],
+  "config_flow": true,
+  "documentation": "https://github.com/bowbikes/layered-logic-mirror-ha",
+  "integration_type": "device",
+  "iot_class": "local_push",
+  "issue_tracker": "https://github.com/bowbikes/layered-logic-mirror-ha/issues",
+  "requirements": [],
+  "version": "0.1.0",
+  "zeroconf": ["_layeredlogic._tcp.local."]
+}

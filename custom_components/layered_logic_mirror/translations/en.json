@@ -1,0 +1,30 @@
+{
+  "config": {
+    "flow_title": "{name}",
+    "step": {
+      "user": {
+        "title": "Add a Layered Logic mirror",
+        "description": "Enter the mirror's IP address or hostname. Leave the secret blank unless the mirror is in paired mode.",
+        "data": {
+          "host": "Host (IP address or hostname)",
+          "secret": "Paired-mode secret (optional)"
+        }
+      },
+      "zeroconf_confirm": {
+        "title": "Add {name}?",
+        "description": "Home Assistant found the mirror \"{name}\" on your network. Enter its paired-mode secret if it has one, otherwise leave it blank.",
+        "data": {
+          "secret": "Paired-mode secret (optional)"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Could not reach a Layered Logic mirror at that address.",
+      "not_a_mirror": "That address responded, but it is not a Layered Logic mirror."
+    },
+    "abort": {
+      "already_configured": "This mirror is already configured.",
+      "cannot_connect": "Could not reach the discovered mirror."
+    }
+  }
+}
